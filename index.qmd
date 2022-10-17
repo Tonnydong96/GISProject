@@ -1,0 +1,11 @@
+---
+title: "GIS Project"
+---
+
+Welcome to our GIS Project web site
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```
