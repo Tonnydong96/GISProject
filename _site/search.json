@@ -32,7 +32,7 @@
     "href": "overview.html",
     "title": "Overview",
     "section": "",
-    "text": "In this project, we are given two major themes and sub-theme. Detail description of this project is available on this page. Land cover classification is a common application area of digital image analysis."
+    "text": "This section provides an overview of the Project, Team and Timeline."
   },
   {
     "objectID": "overview.html#project-tasks",
@@ -75,5 +75,19 @@
     "title": "About",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "overview.html#motivation",
+    "href": "overview.html#motivation",
+    "title": "Overview",
+    "section": "Motivation",
+    "text": "Motivation\nHistory of MRT:\nWith over 148 km of rail across 106 stations, an estimated 3 million people commute to work, school and other destinations on a daily basis. First open to passengers in 1987, the MRT had actually been a long time coming, with planning done as early as the 1960s. The main objective of building the MRT was to have a better road network for Singaporeans and create a more efficient public transport system to cope with the increasing population. \nIn 1972, a team of consultants and officers start the SG Mass Transit study, in which they recommended an investment in public transport to cope with the travel demands and avoid traffic congestion as it started to worsen. In the second phase, they recommended a bus-rail system rather than an all-bus system. However, it was a dilemma because constructing an MRT system had high costs, impacts on land use and economic activities. 1982, goc found that SG would benefit greatly from an MRT system and decided to build and finance the $5 billion project."
+  },
+  {
+    "objectID": "overview.html#project-objective",
+    "href": "overview.html#project-objective",
+    "title": "Overview",
+    "section": "Project objective",
+    "text": "Project objective\n\nHow accessible the mrt stations are from the residential / industrial areas / shopping centres / schools (objective)\nHow long does it take to reach the MRT stations, in terms of walking minutes? (First mile vs last mile)\nWho exactly are we serving? (number of HDBs in the catchment area & the demographics of the population staying there) (focus more on what are social amenities, recreational activities around the mrt stations)"
   }
 ]

@@ -5,20 +5,20 @@ editor: visual
 
 ## Overview
 
-In this project, we are given two major themes and sub-theme. Detail description of this project is available on this [page](https://smt201-ay2022-23t1.netlify.app/gisproject). Land cover classification is a common application area of digital image analysis.
+This section provides an overview of the Project, Team and Timeline.
 
-## Literature review
+## Motivation
 
-In this project, the following articles will be reviewed.
+**History of MRT**:
 
-## Objectives
+With over [148 km of rail across 106 stations](http://www.smrttrains.com.sg/About-Us/Our-Identity), an estimated [3 million](https://data.gov.sg/dataset/public-transport-utilisation-average-public-transport-ridership) people commute to work, school and other destinations on a daily basis. First open to passengers in 1987, the MRT had actually been a long time coming, with planning done as early as the 1960s. The main objective of building the MRT was to have a better road network for Singaporeans and create a more efficient public transport system to cope with the increasing population. 
 
-The objectives of this project are as follows:
+In 1972, a team of consultants and officers start the SG Mass Transit study, in which they recommended an investment in public transport to cope with the travel demands and avoid traffic congestion as it started to worsen. In the second phase, they recommended a bus-rail system rather than an all-bus system. However, it was a dilemma because constructing an MRT system had high costs, impacts on land use and economic activities. 1982, goc found that SG would benefit greatly from an MRT system and decided to build and finance the \$5 billion project.
 
--   obj 1
+## Project objective
 
--   obj 2
+-   How accessible the mrt stations are from the residential / industrial areas / shopping centres / schools (objective)
 
-## Tasks
+-   How long does it take to reach the MRT stations, in terms of walking minutes? (First mile vs last mile)
 
-The project task are as follows:
+-   Who exactly are we serving? (number of HDBs in the catchment area & the demographics of the population staying there) (focus more on what are social amenities, recreational activities around the mrt stations)
