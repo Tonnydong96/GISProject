@@ -1,10 +1,13 @@
 ---
-title: "GIS Project"
+title: "GIS_G10"
 ---
 
-Welcome to our GIS Project web site
+Welcome to our GIS project website....hehe...
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+![](images/NR_Viewshed.png)
 
-```{}
-```
+Let's allow Jaymie to explain....
+
+Girl decided to sit in mrt instead of sitting in sch
+
+Haiya just week 10 stuff i guess🙈
