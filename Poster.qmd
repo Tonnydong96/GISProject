@@ -1,0 +1,6 @@
+---
+title: "Poster"
+editor: visual
+---
+
+![](images/G2%20Team%2010%20Poster-01.jpg)
