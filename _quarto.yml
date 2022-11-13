@@ -7,6 +7,8 @@ website:
     left:
       - href: overview.html
         text: Overview
+      - href: Poster.html
+        text: Poster
       - href: methodology.html
         text: Methodology
       - href: analysis.html

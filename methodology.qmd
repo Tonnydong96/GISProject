@@ -1,5 +1,5 @@
 ---
-title: "methodology"
+title: "Methodology"
 editor: visual
 ---
 
@@ -15,9 +15,9 @@ editor: visual
 
 5.  Identify the land use of the catchment areas by analysing the Master Plan 2019.
 
-6.  Identify the types of buildings by analysing the OpenStreetMap buildings layer. Generated the centroids of the buildings in order to select the buildings within the iso-area using the \'Select by location\' function. By selecting these centroids, we are able to select the actual buildings within the iso-areas.
+6.  Identify the types of buildings by analysing the OpenStreetMap buildings layer. Generated the centroids of the buildings in order to select the buildings within the iso-area using the 'Select by location' function. By selecting these centroids, we are able to select the actual buildings within the iso-areas.
 
-7.  Identify the places of interests in the catchment area by analysing the OpenStreetMap POIS layer. Select the POIS within the iso-areas using the \'Select by location\' function.
+7.  Identify the places of interests in the catchment area by analysing the OpenStreetMap POIS layer. Select the POIS within the iso-areas using the 'Select by location' function.
 
 8.  Labelling the POIS with SVG symbols, based on the type of POIS.
 
@@ -46,11 +46,8 @@ Extracting relevant roads from OSM Roads layer
 
 Since our project only focuses on the immediate catchment area of each station, we were only concerned with the areas within 20 minutes of walking distance. Hence, we extracted all the roads that allowed users to walk on. We had to exclude expressways, filtering out Motorway, Motorway Links, Truckway and Truckway links. After extracting out the roads, we created a new layer to form our network layer and ensure all the roads we linked.
 
-\
-
 Creating Iso-area as polygon
 
 \
 \
 \
-
