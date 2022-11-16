@@ -4,6 +4,4 @@ title: "About"
 
 ## About this site
 
-This research study is created by the project team for the fulfilment for SMT201 Geographic Information Systems for Urban Planning
-
-Instructor: Dr. Kam Tin Seong
+THIS IS AN ABOUT PAGE

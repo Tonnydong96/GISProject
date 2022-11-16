@@ -74,7 +74,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This research study is created by the project team for the fulfilment for SMT201 Geographic Information Systems for Urban Planning\nInstructor: Dr. Kam Tin Seong"
+    "text": "THIS IS AN ABOUT PAGE"
   },
   {
     "objectID": "overview.html#motivation",
@@ -103,5 +103,12 @@
     "title": "Analysis",
     "section": "",
     "text": "sdss"
+  },
+  {
+    "objectID": "results_discussion.html",
+    "href": "results_discussion.html",
+    "title": "Results & Discussion",
+    "section": "",
+    "text": "THIS IS RESULTS"
   }
 ]
