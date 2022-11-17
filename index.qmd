@@ -1,13 +1,6 @@
 ---
-title: "GIS_G10"
+title: "Home"
+editor: visual
 ---
 
-Welcome to our GIS project website....hehe...
-
-![](images/NR_Viewshed.png)
-
-Let's allow Jaymie to explain....
-
-Girl decided to sit in mrt instead of sitting in sch
-
-Haiya just week 10 stuff i guess🙈
+Literature review

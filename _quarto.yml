@@ -2,10 +2,10 @@ project:
   type: website
 
 website:
-  title: "GIS Project"
+  title: "Group 10 Cost of Coast?"
   navbar:
     left:
-      - href: overview.html
+      - href: index.html
         text: Overview
       - href: Poster.html
         text: Poster
@@ -13,17 +13,17 @@ website:
         text: Methodology
       - href: analysis.html
         text: Analysis
-      - href: results_discussion.qmd
+      - href: results_discussion.html
         text: Results & Discussion
     right:
       - href: index.html
         text: Home
       - href: about.html
-      - text: About
-
+        text: About
+        
 format:
   html:
-    theme: cosmo
+    theme: Lumen
     css: styles.css
     toc: true
 
