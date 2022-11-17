@@ -3,4 +3,57 @@ title: "Home"
 editor: visual
 ---
 
-Literature review
+# Project Overview
+
+This section provides an overview of the Project, Team and Timeline.
+
+## Introduction
+
+With over 148 km of rail across 106 stations and an estimated 3 million commuters. First open to passengers in 1987, the MRT had actually been a long time coming, with planning done as early as the 1960s. The main objective of building the MRT was to have a better road network for Singaporeans and create a more efficient public transport system to cope with the increasing population. 
+
+In 1972, consultants and officers started the SG Mass Transit study, in which they recommended an investment in public transport to cope with the travel demands and avoid traffic congestion as it started to worsen. In the second phase, they recommended a bus-rail system rather than an all-bus system. However, it was a dilemma because constructing an MRT system had high costs, impacts on land use and economic activities. In 1982, the government found that SG would benefit greatly from an MRT system and decided to build and finance the \$5 billion project.
+
+Main objectives for building MRT in the past
+
+-   Cope with increasing population
+
+-   Ease traffic congestion
+
+-   Better road network
+
+The main objectives for building the TEL:
+
+-   to "bring residents in the **east** and along the **North-South Corrido**r closer to a train station and hence giving them **faster & more direct access to the city**", as per lta.gov.sg.
+
+-   When the TEL opens over the next few years, more than 240,000 households will be within a 10-minute walk from a TEL station
+
+-   TEL will transport an initial amount of 500,000 commuters, gradually increasing to 1 million commuters in the future.
+
+## Project motivation
+
+In the 1960s, the main objective of building MRT was to have a better road network and an efficient public transport system for Singaporeans to cope with the increasing population. After much progress in the development of the rail-way system today, the Government announced a \$87.5 billion in 2020 to fund rail-way projects in the next decade, with the Thomson- East Coast line completed and running by 2023. Main objective is to "bring residents in the east and along the North-South Corridor closer to a train station and hence giving them faster & more direct access to the city" (lta.gov.sg). However, constructing a MRT system had high cost, impacts on land use and structural integrity of the buildings around it.
+
+## Problem statement:
+
+This project aims to find out what facilities and land use plans are covered within the catchment areas of the 7 upcoming TEL MRT stations and whether there is true necessity to invest such a huge sum into Singapore's already world-renowned rail system.
+
+## Project study area:
+
+Thomson East coast line, TE23 Tanjong Rhu to TE29 Bayshore.
+
+## Project objectives
+
+1.  To find out how accessible MRT stations are from residential, commercial and educational institutions.
+
+2.  How long does it take to reach the MRT stations, in terms of walking speeds (first mile vs last mile)?
+
+3.  What is the socio-economic profile of residents residing along the TEL?
+
+## Scope of Work:
+
+## Project Timeline:
+
+Team 10 Gantt Chart
+
+\
+\
