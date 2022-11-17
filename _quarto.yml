@@ -5,7 +5,7 @@ website:
   title: "Group 10 Cost of Coast?"
   navbar:
     left:
-      - href: overview.html
+      - href: index.html
         text: Overview
       - href: Poster.html
         text: Poster
