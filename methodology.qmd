@@ -3,51 +3,353 @@ title: "Methodology"
 editor: visual
 ---
 
-## Steps taken:
+## Steps taken
 
-1.  Creating new shapefile layer to map out the location of MRT exits of the new Thomson-East Coast line MRT stations
+1.  Extracting the TEL Stage 4 MRT stations from the Master Plan 2019 Rail Station layer. (SS done)
 
-2.  Extracting out the walkways and pathways people can take
+2.  Creating new shapefile layer to map out the location of MRT exits of the new Thomson-East Coast line MRT stations (SS done)
 
-3.  Using Iso-area as polygon to delineate the catchment area around these MRT stations.
+3.  Extracting out the walkways and pathways people can take. (SS done)
 
-4.  Classify the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walks, based on a walking speed of 4.44 km/h. 
+4.  Using "Iso-area as polygon" function to delineate the catchment area around these MRT stations. (SS done)
 
-5.  Identify the land use of the catchment areas by analysing the Master Plan 2019.
+5.  Classify the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walks, based on a walking speed of 4.44 km/h. (SS done)
 
-6.  Identify the types of buildings by analysing the OpenStreetMap buildings layer. Generated the centroids of the buildings in order to select the buildings within the iso-area using the 'Select by location' function. By selecting these centroids, we are able to select the actual buildings within the iso-areas.
+6.  Identify the current & projected land use of the catchment areas by analysing the Master Plan 2019 Land Use layer. (SS done)
 
-7.  Identify the places of interests in the catchment area by analysing the OpenStreetMap POIS layer. Select the POIS within the iso-areas using the 'Select by location' function.
+7.  Generated the centroids of the OpenStreetMap buildings layer in order to select the buildings that are within the iso-areas using the 'Select by location' function. By selecting these centroids, we are able to select the actual buildings that are within the iso-areas. (SS done)
 
-8.  Labelling the POIS with SVG symbols, based on the type of POIS.
+8.  Identify the types of buildings by analysing the OpenStreetMap buildings layer. (SS done)
 
-\
+9.  Identify the places of interest in the catchment area by analysing the OpenStreetMap POIS layer, and selecting those within the iso-areas using the 'Select by location' function. (SS done)
 
-The datasets used are:
+10. Labelling the POIS with SVG symbols, based on the type of POIS. (SS done)
+
+### Datasets Used
 
 1.  Master Plan 2019 Rail Station Layer from data.gov.sg. This dataset gives us the locations of the MRT stations that are estimated to be done by 2023.
 
-2.  Master Plan 2019 Land Use from data.gov.sg. This dataset shows the projected land use of Singapore by 2023.
+2.  Master Plan 2019 Land Use from data.gov.sg. This dataset shows the projected land use of Singapore until 2023.
 
-3.  Roads and buildings data from OpenStreetMap (OSM) data sets, downloaded from  [Malaysia, Singapore, and Brunei](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html) at Geofabrik download server.
+3.  Roads, buildings and places of interest data (labelled as POIS) from OpenStreetMap (OSM) data sets, downloaded from [Malaysia, Singapore, and Brunei](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html) which is located in the Geofabrik download server.
 
-\
+### Extracting the required MRT stations
 
-Locating MRT exits
+Using the data we have retrieved from data.gov.sg, we were able to obtain the shapefile for the MRT stations (existing and future stations). Using the Select features function, we filtered out only the 7 MRT stations of the Thomson-East Coast line that we will be analysing. All the selected stations were saved into a Geopackage, TEL_MRTStations.
 
-The first step we did was to map out the MRT station exits. This data could not be found online. The only dataset that was provided on data.gov.sg was the Master Plan 2019 Rail Station layer, which showed the indicative MRT station outlines. However, we felt that the outlines were not enough to give us accurate results since one MRT station can have up to five different exits which may serve very different purposes. Hence, by creating a new shapefile, we toggled editing and marked out the location of the MRT exits. We referenced lta.gov.sg to obtain the location of the exits of each station.
+![](images/1.png)
 
-![](https://lh5.googleusercontent.com/9rnGszT1N9ES6O2FP8H7eCw7ak3uDbYNdUAU9VEhzP32q7EhAlVdtGYfkc58xxPW02FkKu9PYKX82C4ePMLhpIhrxH3_ATm_XN1oWcB5i1F47RAvjs3kX38TpqLnGSoLV8YocbgMe00d08PWuEelABrBDVO9v2SOFdaBE7sAJtMjDEmfkXAca4nXafbMWg)
+![](images/2.png)
 
-\
-\
+![](images/3.png)
 
-Extracting relevant roads from OSM Roads layer
+![](images/4.png)
 
-Since our project only focuses on the immediate catchment area of each station, we were only concerned with the areas within 20 minutes of walking distance. Hence, we extracted all the roads that allowed users to walk on. We had to exclude expressways, filtering out Motorway, Motorway Links, Truckway and Truckway links. After extracting out the roads, we created a new layer to form our network layer and ensure all the roads we linked.
+### Locating MRT exits
 
-Creating Iso-area as polygon
+The first step we did was to map out the MRT station exits. This data could not be found online. The only dataset that was provided on data.gov.sg was the Master Plan 2019 Rail Station layer, which showed the indicative MRT station outlines. However, we felt that the outlines were not enough to give us accurate results since one MRT station can have up to five different exits which may serve very different purposes. Hence, by creating a new shapefile, we toggled editing and marked out the location of the MRT exits. We referenced lta.gov.sg to obtain the location of the exits of each station. We then created new shapefile layers of point geometry type and toggled editing to add in the point features where the MRT exits are located.
 
-\
-\
-\
+![](images/5.png)
+
+![](images/6.png)![](images/7.png)\
+![](images/8)![](https://lh6.googleusercontent.com/NavZZyjChNFpv9BEa3FdE0kseFduze7oiFqqhi4N_TFHTUGIj_uNcmAHomh7ncjiVF7ioKBlI0fqoI_dmemykUB1u52t8rr8XJ4yIPQLw4lRX-H9x3luLSFrE3kBxd4iqf9R73HxNXqz82UjnwGRfaN7CHwNaAMHg3OBdqLYBHKQKtwymVGoBoL3rB400Q)
+
+![](images/10.png)
+
+![](images/11.png)
+
+### Extracting relevant roads from OSM Roads layer
+
+Since our project only focuses on the immediate catchment area of each station, we were only concerned with the areas within 20 minutes of walking distance. Hence, we extracted all the roads that allowed users to walk on. We had to exclude expressways by filtering out Motorway, Motorway Links, Truckway and Truckway links. After extracting out the roads, we created a new layer to form our network layer and ensure all the roads we linked.
+
+![](images/12.png)
+
+Select the osm_roads_free_1.shp from your file
+
+![](images/13.png)![](https://lh4.googleusercontent.com/lYTV3B7UfU8LMiKZW7W4Al4RZK28uLA8Ui_ivJyGoTR9yyzwtU2DkmWlSdHM6pm5qHpV-ClvHiySraLrLg5VTWjwrN_lTYo5sV_zpfa_jRoJWIySb2y7FgoNBq3aC_UvYxJUF_my0z6VEqedSDViQed6ypnj6vtjiQYIk0pyGBe0yVYWdymllv14LIWA_g)
+
+After the layer is loaded, select "select Features by Polygon" from the header.
+
+![](images/15.png)
+
+Crop out the designated area of Singapore, to reduce processing power.
+
+![](images/16.png)
+
+Save the layer in a Geopackage named SG Roads.
+
+![](images/17.png)
+
+![](images/18.png)
+
+Using the expression above, we selected motorway, motorway_link, trunk and trunk_link from osm roads (which are expressways), which are the paths that pedestrians cannot walk on.
+
+![](images/19.png)
+
+We proceeded to invert the features selected from above. The remaining paths will form the roads with walking paths available, thus making it an important aspect of our catchment area study.
+
+![](images/20.png)
+
+Screenshot above shows all the walking paths in Singapore that are applicable to our study.
+
+### Creating Iso-area as polygon layers & classifying the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walk.
+
+![](images/21.png)
+
+In this example, we will use TE23 (Tanjong Rhu) MRT station as an example for the methods used to generate iso-areas. The blue pointers indicate the exit points of the station and the lines surrounding it indicate the walking paths.
+
+![](images/22.png)
+
+Go to **Processing toolbox** -\> **QNEAT 3** -\> select **Iso-Area as Polygons (from layer)**.
+
+![](images/23.png)
+
+![](images/24.png)
+
+Steps taken in the screenshots above:
+
+1.  Selecting the paths that are walkable in the **Vector layer representing network**, which is labelled as Walkable_Road in our project.
+
+2.  Start Points: Selecting the exit points of the MRT station, which is labelled as TE23_MrtExits.
+
+3.  Size of Iso-Area: Time-based. For this project, we are study walking times of up to 20 minutes, which is equal to 1200 seconds.
+
+4.  Contour Interval: Time-based. For the purpose of our analysis, we are using time intervals of 5 mins, which is equal to 300 seconds.
+
+5.  Path type to calculate: Fastest Path (time optimization).
+
+6.  Setting the Default Speed as 4.44km/h, which is the average walking speed that we found in our literature review.
+
+![](images/25.png)
+
+This is the result of the Iso-area generated with the Fastest path algorithm which is based on our walking speed.
+
+![](images/26.png)
+
+![](images/27.png)
+
+Now, we go to Symbology and classify each ring into an interval of 5 minutes, from 0 to 20 mins walking time. The red being the nearest to the MRT exit, and light yellow being the furthest.
+
+We repeated these steps for each set of exit points from TE24 to TE29.
+
+### Identification of land use through the analysis of the Master Plan 2019 datasets.
+
+![](images/28.png)
+
+First, we opened the Master Plan 2019 Land Use KML file.\
+
+![](images/29.png)
+
+The land use layer will look like this.\
+
+![](images/30.png)
+
+![](images/31.png)
+
+We proceeded to save it as a Geopackage file with the name "MP19_LandUse" with the appropriate Coordinate Reference System (EPSG:3414).\
+
+![](images/32.png)
+
+Toggle on the Iso-area layer and the land use area. We will be selecting the land use that intersects with the iso-area.\
+
+![](images/33.png)
+
+Go to the QGIS header bar and find the Select by location function.
+
+![](images/34.png)
+
+Steps: 
+
+1.  In the **Select features from** column, we will choose our land use layer, which is labelled as MP19_Landuse. 
+
+2.  Check the box beside **intersect,** to get the intersection between the land use layer and the iso-area.
+
+3.  By comparing selection by: IsoArea_TE23, which is the label for our iso-area.
+
+4.  We kept everything else as their default option and ran the selection.
+
+![](images/35.png)
+
+This will be the output generated, the image above shows TE23_Landuse map.
+
+![](images/36.png)![](images/37.png)
+
+As shown in above image, we will classify the land use based on the standardised legend our team agreed on. The colours are set to be the natural colour of the landmark to make it more intuitive. Followed by saving it in a styling file.
+
+![](https://lh6.googleusercontent.com/IQWet_eza3ePNB66AqdL6_xAlQf8qJWFe6TYGSfJBjWR3xBQn2DJrFNBVw6QooqCJngYr5MKFLeB9wvxhpQndLSFrNgJ2wDJId0qELdPvHUI72R5P_l-w534Hc7Y6xHlFL9P3Ppee_UApjhlIleimZj77Of5ZA5LHEiP4uE0acKNWa5QsCbY2iSj3jah2g)
+
+Repeat the same steps for TE24 to TE29 landuse maps.
+
+### Generation of Centroids for Buildings
+
+![](images/39.png)
+
+First, we opened the buildings shapefile from OpenStreetMap.
+
+![](images/40.png)
+
+The buildings shapefile will look like this, which includes all buildings that are located in Singapore, Malaysia and Brunei. We are only interested in the buildings that are located in Singapore.
+
+![](images/41.png)
+
+![](images/42.png)
+
+We did a selection using the **Select Features by Polygon** function and selected the buildings that are within the boundaries of mainland Singapore.
+
+![](images/43.png)
+
+We proceeded to save it as a GeoPackage file with the label All_buildings.
+
+![](images/44.png)
+
+'![](images/45.png)
+
+By utilising the realcentroid plugin that we downloaded separately, we were able to generate the centroids of each building. The main difference between this plugin and the built-in centroid generator is that realcentroid generates a point that is internal of a polygon, whereas the built-in one sometimes would generate a point that is external of the building polygon. We decided to use the former instead.
+
+![](images/46.png)
+
+Picture above shows the centroids generated.
+
+![](images/47.png)
+
+We proceeded to zoom in to the layer to get a closer look at the centroids that are within the Iso-area.
+
+![](images/48.png)
+
+By utilizing the **Select by Location** function, we proceeded to select the centroids that intersect with the Iso-area.
+
+![](images/49.png)
+
+We labelled the selected centroids as BC_TE23 and saved it as a GeoPackage file, with the correct Coordinated Reference System (EPSG:3414).
+
+![](images/50.png)
+
+The selected centroids are marked as grey in the screenshot above. We did another selection of the buildings which intersects with the selected centroids.
+
+![](images/51.png)
+
+Screenshot above shows the layers that are included to do this selection.
+
+![](images/52.png)
+
+As we can see, the selected buildings are highlighted in yellow. It includes the buildings which are partly located outside the iso-area, but have their centroids located inside the Io-area.\
+
+![](images/53.png)
+
+We saved these highlighted buildings as TE23_Buildings in a GeoPackage with the correct CRS.
+
+![](images/54.png)
+
+Screenshot above shows the final result after everything is saved.
+
+We followed these similar steps from TE24 to TE29.
+
+### Identify the types of buildings by analysing the OpenStreetMap buildings layer
+
+![](images/55.png)
+
+We identified many null values in the attribute tables of the buildings. For example, in the picture above of TE24 buildings layer, all the pink buildings are null values. In order to fill up the null values, we placed the buildings layer over the OpenStreetMap view and compared the buildings. Some building were not identifiable through the OpenStreetMap so we took to Google to find out the specific building if it was unclear from the OpenStreetMap.
+
+![](https://lh6.googleusercontent.com/rR1p9kX9Z8sYNSBbGPG_5QEOO5qzT4lVZ2OLU8b-U9AY6oTn0Gajjd6lGR5Sxe2rNUy1SU4bH3Ll9QVvTgwcFq2rI9nWgsUFi32zT0jq5ATHi0-Bh9Xr6JiEHPWPYZB86nIYi-Cck_D4aZuV89d2wzvKKK36-FaFZ4NTCMmkQlOHQLxhGtObc5HeudXz)
+
+We used the Select features by freehand function to select the buildings we identified through the OpenStreetMap. 
+
+![](images/57.png)
+
+Using the Field calculator, we updated the existing field to change the null values to the appropriate categories. However, due to the large number of null values, we were unable to identify each and every building and only focused on the large areas with many null values. We also focused on picking out the buildings that would be beneficial for the residents in the area to have knowledge about such as the schools and religious places.
+
+![](images/58.png)
+
+We then categorised the buildings based on colours and used the same style for each map.
+
+![](images/59.png)
+
+Screenshot above shows the final result after categorising the buildings.
+
+### Identify the places of interest in the catchment area within the Iso-areas using the 'Select by location' function.
+
+![](images/60.png)
+
+Firstly, we imported the places of interest point layer (which is labelled as POIS) into our QGIS project.
+
+![](images/61.png)
+
+Screenshot above shows the POIS layer in its raw form.
+
+![](images/62.png)
+
+We then proceeded to select the places of interest which are located within mainland Singapore. We did this using the **Select Features by Polygon** function.
+
+![](https://lh4.googleusercontent.com/j6mHbavJCTnmdVeDMjTLgH1ET5Mc7yXcUzoVhhJh_dsPpffJfLJr8pzjI0GFsKPVy6_wBuIer5f-N5t9dCLILt4-SRy6ygryTndGG-C0mbYUpl-dcXoGytnZeK8rttaC2tMBSNZ259Be8msntrAckxM6eCVaZK-9UBeWxDJy9yX8VCJtt01cPmYmKeP8qQ)
+
+We then proceeded to save the selected features as a GeoPackage and assigned the appropriate CRS to the file.
+
+![](images/64.png)
+
+By overlaying the iso-area over the map, we can see the points that are internal and external of the iso-area. We want to extract all the points of interest that are internal of the iso-area.
+
+![](images/65.png)
+
+By using the **Select by Location** function, we selected all the points of interest that intersect with the iso-area.
+
+![](images/66.png)
+
+After these points of interest are selected, we then saved these selected features in a GeoPackage with the name "TE23_Pois", indicating the points of interest that are within the iso-area of TE23 (Tanjong Rhu).
+
+![](images/67.png)
+
+Screenshot above shows the result of our selection.
+
+### Labelling the POIS with SVG symbols, based on the type of POIS.
+
+![](images/68.png)
+
+We then did a classification of these points of interest **by their class** (named as fclass) and assigned appropriate SVG symbols to these points. The assigning of SVG symbols were based on what the fclass is (if fclass is cafe, we assigned a logo representing a coffee cup to it).
+
+![](images/69.png)
+
+Screenshot above shows the final result of our classification and assigning of SVG symbols.
+
+We proceeded to execute similar steps for all iso-areas from TE24 to TE29.
+
+### Standardising the symbologies for different layers
+
+Consistency of the colours, legends and classification of our iso-areas, places of interest, buildings and land use across **all MRT stations** is key for intuitive understanding of our maps. Yet, it is a tedious process which requires some special tools for us to standardise the colours. Enter **QGIS QML style file**!
+
+![](images/70.png)
+
+Screenshot above shows the iso-area after symbolisation is done. How do we implement these exact colours across all iso-areas?
+
+![](images/71.png)
+
+Firstly, we opened the **Properties** dialog window of the iso-area.
+
+![](images/72.png)
+
+Next, we selected the **Style** drop-down menu and selected **Save Style.**
+
+![](images/73.png)
+
+We named it according to what we are saving (in this case, an iso-area) and saved it as a **QML file**. 
+
+![](images/74.png)
+
+We left it in its default settings (all boxes checked) and clicked OK.
+
+![](images/75.png)
+
+Screenshot above shows another iso-area which hasn't been symbolised yet. Now, we want to load the qml file that we just saved to this specific iso-area.\
+
+![](images/76.png)
+
+Firstly, we opened the properties window, clicked on the Style drop-down menu and selected **Load Style.**
+
+![](images/77.png)
+
+We proceeded to import the QML file that we just created (in this case, it is labelled as ISOArea_Symbology) and loaded it into this iso-area.
+
+![](images/78.png)
+
+Screenshot above shows the result after the QML file is loaded.
+
+We proceeded to execute the same steps for each iso-area, each set of POIS, buildings and land-use from TE24 to TE29.

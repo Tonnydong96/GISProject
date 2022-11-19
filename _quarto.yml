@@ -16,7 +16,7 @@ website:
       - href: results_discussion.html
         text: Results & Discussion
     right:
-      - href: index.html
+      - href: index.qmd
         text: Home
       - href: about.html
         text: About
@@ -28,4 +28,3 @@ format:
     toc: true
 
 editor: visual
-

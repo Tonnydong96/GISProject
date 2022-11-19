@@ -1,5 +1,6 @@
 ---
 title: "About"
+editor: visual
 ---
 
 ## About this site
