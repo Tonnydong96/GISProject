@@ -1,9 +1,7 @@
 ---
-title: "About"
+title: "About Us"
 editor: visual
 ---
-
-## About Us
 
 Welcome to our project website! Interested to gain insights to the Stage 4 Thomson East-Coast line MRT station? Then you are at the right place!
 
@@ -12,7 +10,7 @@ Here are the wonderful people who are behind the creation of The Cost Of Coast!�
 ### Jaymie Seet En Tong
 
 ![](images/pasted%20image%200.png){width="400"}\
-Fun fact: She\'s a cat lover!
+Fun fact: She's a cat lover!
 
 ### Kua yao dong
 
@@ -24,11 +22,10 @@ Hit him up if you want to learn the violin!
 ![](images/3-01.png){width="400"}\
 Bouldering is his favourite pastime! 🧗🏻‍♂️
 
-**Here\'s the link of our SMT201: Geographic Information System for Urban Planning project deliverables website**: <https://smt201-ay2022-23t1.netlify.app/gisproject>
+**Here's the link of our SMT201: Geographic Information System for Urban Planning project deliverables website**: <https://smt201-ay2022-23t1.netlify.app/gisproject>
 
-**And here\'s the link to our project GitHub**: <https://github.com/Tonnydong96/GISProject> 
+**And here's the link to our project GitHub**: <https://github.com/Tonnydong96/GISProject> 
 
 Happy exploring!
 
 \
-
