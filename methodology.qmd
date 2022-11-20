@@ -7,27 +7,27 @@ editor: visual
 
 1.  Extracting the TEL Stage 4 MRT stations from the Master Plan 2019 Rail Station layer.
 
-2.  Creating new shapefile layer to map out the location of MRT exits of the new Thomson-East Coast line MRT stations (SS done)
+2.  Creating new shapefile layer to map out the location of MRT exits of the new Thomson-East Coast line MRT stations
 
-3.  Extracting out the walkways and pathways people can take. (SS done)
+3.  Extracting out the walkways and pathways people can take.
 
-4.  Using "Iso-area as polygon" function to delineate the catchment area around these MRT stations. (SS done)
+4.  Using "Iso-area as polygon" function to delineate the catchment area around these MRT stations.
 
-5.  Classify the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walks, based on a walking speed of 4.44 km/h. (SS done)
+5.  Classify the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walks, based on a walking speed of 4.44 km/h.
 
-6.  Identify the current & projected land use of the catchment areas by analysing the Master Plan 2019 Land Use layer. (SS done)
+6.  Identify the current & projected land use of the catchment areas by analysing the Master Plan 2019 Land Use layer.
 
-7.  Generated the centroids of the OpenStreetMap buildings layer in order to select the buildings that are within the iso-areas using the 'Select by location' function. By selecting these centroids, we are able to select the actual buildings that are within the iso-areas. (SS done)
+7.  Generated the centroids of the OpenStreetMap buildings layer in order to select the buildings that are within the iso-areas using the 'Select by location' function. By selecting these centroids, we are able to select the actual buildings that are within the iso-areas.
 
-8.  Identify the types of buildings by analysing the OpenStreetMap buildings layer. (SS done)
+8.  Identify the types of buildings by analysing the OpenStreetMap buildings layer.
 
-9.  Identify the places of interest in the catchment area by analysing the OpenStreetMap POIS layer, and selecting those within the iso-areas using the 'Select by location' function. (SS done)
+9.  Identify the places of interest in the catchment area by analysing the OpenStreetMap POIS layer, and selecting those within the iso-areas using the 'Select by location' function.
 
 10. Labelling the POIS with SVG symbols, based on the type of POIS.
 
 11. Standardising the symbologies for different layers.
 
-12. **For cycling path analyses, classifying the iso-areas based on 5 minutes & 10 minutes cycling time from the MRT stations, based on a cycling speed of 16 km/h.**
+12. For cycling path analyses, classifying the iso-areas based on 5 minutes & 10 minutes cycling time from the MRT stations, based on a cycling speed of 16 km/h.
 
 ### Datasets Used
 
