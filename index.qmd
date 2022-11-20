@@ -3,13 +3,13 @@ title: "Home"
 editor: visual
 ---
 
-# G2 Team 10 Cost of Coast?
+# G2 Team 10: The Cost of Coast?
 
-![](images/photo_2022-11-20_17-22-10.jpg)
+![](images/photo_2022-11-20_19-14-49.jpg){fig-align="center" width="300"}
 
-Coast project under the module SMT201 Geographic Information Systems for Urban Planning by Professor Kam Tin Seong in Singapore Managament University (SMU).
+Thomson-East Coast line project under the module SMT201 Geographic Information Systems for Urban Planning by Professor Kam Tin Seong in Singapore Management University (SMU).
 
-The name cost of coast came about because we were pondering if the cost of building the stage 4 of TEL MRT stations, is worth it and reap enough benefits for the commuters and residence around the area.
+The name 'The Cost of Coast?' came about because we were pondering if the cost of building the stage 4 of TEL MRT stations is truly worth it. In this project website, dive into our findings using various QGIS approaches to find out what benefits are reaped from the construction of these new stations.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ The main objectives for building the TEL:
 
 ## Project motivation
 
-In the 1960s, the main objective of building MRT was to have a better road network and an efficient public transport system for Singaporeans to cope with the increasing population. After much progress in the development of the rail-way system today,[ the Government announced a \$87.5 billion in 2020 ](https://www.roots.gov.sg/stories-landing/stories/the-mass-rapid-transit/story)to fund rail-way projects in the next decade, with the Thomson- East Coast line completed and running by 2023. Main objective is to \"bring residents in the east and along the North-South Corridor closer to a train station and hence giving them faster & more direct access to the city\" (lta.gov.sg). However, constructing a MRT system had high cost, impacts on land use and structural integrity of the buildings around it.
+In the 1960s, the main objective of building MRT was to have a better road network and an efficient public transport system for Singaporeans to cope with the increasing population. After much progress in the development of the rail-way system today,[the Government announced a \$87.5 billion in 2020](https://www.roots.gov.sg/stories-landing/stories/the-mass-rapid-transit/story)to fund rail-way projects in the next decade, with the Thomson- East Coast line completed and running by 2023. Main objective is to "bring residents in the east and along the North-South Corridor closer to a train station and hence giving them faster & more direct access to the city" (lta.gov.sg). However, constructing a MRT system had high cost, impacts on land use and structural integrity of the buildings around it.
 
 ## Problem statement:
 

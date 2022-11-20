@@ -5,7 +5,7 @@ editor: visual
 
 ## Steps taken
 
-1.  Extracting the TEL Stage 4 MRT stations from the Master Plan 2019 Rail Station layer. (SS done)
+1.  Extracting the TEL Stage 4 MRT stations from the Master Plan 2019 Rail Station layer.
 
 2.  Creating new shapefile layer to map out the location of MRT exits of the new Thomson-East Coast line MRT stations (SS done)
 
@@ -39,7 +39,11 @@ Using the data we have retrieved from data.gov.sg, we were able to obtain the sh
 
 ![](images/1.png)
 
+Using the Select by Expression function, we selected out only the 7 MRT stations we want to analyse.
+
 ![](images/2.png)
+
+After selecting the MRT stations, we saved these features into a Geopackage.
 
 ![](images/3.png)
 
@@ -51,10 +55,14 @@ The first step we did was to map out the MRT station exits. This data could not 
 
 ![](images/5.png)
 
+The screenshots below show the steps we took to create a new shapefile.
+
 ![](images/6.png)![](images/7.png)\
 ![](images/8)![](https://lh6.googleusercontent.com/NavZZyjChNFpv9BEa3FdE0kseFduze7oiFqqhi4N_TFHTUGIj_uNcmAHomh7ncjiVF7ioKBlI0fqoI_dmemykUB1u52t8rr8XJ4yIPQLw4lRX-H9x3luLSFrE3kBxd4iqf9R73HxNXqz82UjnwGRfaN7CHwNaAMHg3OBdqLYBHKQKtwymVGoBoL3rB400Q)
 
-![](images/10.png)
+![](images/10.png){width="400"}
+
+Afterwards, we separated the MRT exits into their own Geopackages by using the Select features by polygon function to pick out the exits for each MRT station. We wanted a separate shapefile for each MRT station since we wanted to analyse each station individually so that there is clear distinction between the Iso-Areas of each station.
 
 ![](images/11.png)
 
@@ -92,7 +100,7 @@ We proceeded to invert the features selected from above. The remaining paths wil
 
 Screenshot above shows all the walking paths in Singapore that are applicable to our study.
 
-### Creating Iso-area as polygon layers & classifying the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walk.
+### Creating Iso-area as polygon layers & classifying the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walk
 
 ![](images/21.png)
 
@@ -132,11 +140,11 @@ Now, we go to Symbology and classify each ring into an interval of 5 minutes, fr
 
 We repeated these steps for each set of exit points from TE24 to TE29.
 
-### Identification of land use through the analysis of the Master Plan 2019 datasets.
+### Identification of land use through the analysis of the Master Plan 2019 datasets
 
 ![](images/28.png)
 
-First, we opened the Master Plan 2019 Land Use KML file.\
+First, we opened the Master Plan 2019 Land Use KML file.
 
 ![](images/29.png)
 
@@ -353,3 +361,42 @@ We proceeded to import the QML file that we just created (in this case, it is la
 Screenshot above shows the result after the QML file is loaded.
 
 We proceeded to execute the same steps for each iso-area, each set of POIS, buildings and land-use from TE24 to TE29.
+
+### Generating iso-areas for TE25 and TE28 cycling paths
+
+The steps that we used to generate the iso-areas as shown below are similar to the iso-areas for walking paths, with a few differences. These differences are explained in detail below.
+
+![](images/79.png)
+
+We first used the walkable paths layer that we generated earlier, as well as the MRT exits.
+
+![](images/80.png)
+
+We then used the **Iso-Area as Polygon** from the QNEAT3 plugin to generate the iso-areas.
+
+![](images/81.png)
+
+![](images/82.png)
+
+The values we inputted for the function included:
+
+-   600 as the size of iso-area, which is equivalent to 600 seconds. This will be the shape of our iso-area.
+
+-   16 as our default speed. This defines the average cycling speed (in km/h) in our analyses.
+
+The rest of the values are the same as the methods we used to generate iso-areas from the walking paths, and we ran the algorithm.
+
+![](images/83.png)Screenshot below shows the result of running our iso-area algorithm.
+
+![](images/84.png)
+
+We then symbolised the layer according to its cost level (labelled as 0-5 mins and 5-10 mins respectively) and applied it to the layer.
+
+![](images/85.png)
+
+This is the final result after symbolisation.
+
+We proceeded to do the same steps for the cycling paths of TE28.
+
+\
+

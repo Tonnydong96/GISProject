@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Group 10 Cost of Coast? - Methodology</title>
+<title>G2T10: The Cost of Coast? - Methodology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Group 10 Cost of Coast?</span>
+    <span class="navbar-title">G2T10: The Cost of Coast?</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -97,9 +97,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html">About</a>
   </li>  
 </ul>
@@ -123,13 +120,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#extracting-the-required-mrt-stations" id="toc-extracting-the-required-mrt-stations" class="nav-link" data-scroll-target="#extracting-the-required-mrt-stations">Extracting the required MRT stations</a></li>
   <li><a href="#locating-mrt-exits" id="toc-locating-mrt-exits" class="nav-link" data-scroll-target="#locating-mrt-exits">Locating MRT exits</a></li>
   <li><a href="#extracting-relevant-roads-from-osm-roads-layer" id="toc-extracting-relevant-roads-from-osm-roads-layer" class="nav-link" data-scroll-target="#extracting-relevant-roads-from-osm-roads-layer">Extracting relevant roads from OSM Roads layer</a></li>
-  <li><a href="#creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk." id="toc-creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk." class="nav-link" data-scroll-target="#creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk.">Creating Iso-area as polygon layers &amp; classifying the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walk.</a></li>
-  <li><a href="#identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets." id="toc-identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets." class="nav-link" data-scroll-target="#identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets.">Identification of land use through the analysis of the Master Plan 2019 datasets.</a></li>
+  <li><a href="#creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk" id="toc-creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk" class="nav-link" data-scroll-target="#creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk">Creating Iso-area as polygon layers &amp; classifying the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walk</a></li>
+  <li><a href="#identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets" id="toc-identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets" class="nav-link" data-scroll-target="#identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets">Identification of land use through the analysis of the Master Plan 2019 datasets</a></li>
   <li><a href="#generation-of-centroids-for-buildings" id="toc-generation-of-centroids-for-buildings" class="nav-link" data-scroll-target="#generation-of-centroids-for-buildings">Generation of Centroids for Buildings</a></li>
   <li><a href="#identify-the-types-of-buildings-by-analysing-the-openstreetmap-buildings-layer" id="toc-identify-the-types-of-buildings-by-analysing-the-openstreetmap-buildings-layer" class="nav-link" data-scroll-target="#identify-the-types-of-buildings-by-analysing-the-openstreetmap-buildings-layer">Identify the types of buildings by analysing the OpenStreetMap buildings layer</a></li>
   <li><a href="#identify-the-places-of-interest-in-the-catchment-area-within-the-iso-areas-using-the-select-by-location-function." id="toc-identify-the-places-of-interest-in-the-catchment-area-within-the-iso-areas-using-the-select-by-location-function." class="nav-link" data-scroll-target="#identify-the-places-of-interest-in-the-catchment-area-within-the-iso-areas-using-the-select-by-location-function.">Identify the places of interest in the catchment area within the Iso-areas using the ‘Select by location’ function.</a></li>
   <li><a href="#labelling-the-pois-with-svg-symbols-based-on-the-type-of-pois." id="toc-labelling-the-pois-with-svg-symbols-based-on-the-type-of-pois." class="nav-link" data-scroll-target="#labelling-the-pois-with-svg-symbols-based-on-the-type-of-pois.">Labelling the POIS with SVG symbols, based on the type of POIS.</a></li>
   <li><a href="#standardising-the-symbologies-for-different-layers" id="toc-standardising-the-symbologies-for-different-layers" class="nav-link" data-scroll-target="#standardising-the-symbologies-for-different-layers">Standardising the symbologies for different layers</a></li>
+  <li><a href="#generating-iso-areas-for-te25-and-te28-cycling-paths" id="toc-generating-iso-areas-for-te25-and-te28-cycling-paths" class="nav-link" data-scroll-target="#generating-iso-areas-for-te25-and-te28-cycling-paths">Generating iso-areas for TE25 and TE28 cycling paths</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -156,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="steps-taken" class="level2">
 <h2 class="anchored" data-anchor-id="steps-taken">Steps taken</h2>
 <ol type="1">
-<li><p>Extracting the TEL Stage 4 MRT stations from the Master Plan 2019 Rail Station layer. (SS done)</p></li>
+<li><p>Extracting the TEL Stage 4 MRT stations from the Master Plan 2019 Rail Station layer.</p></li>
 <li><p>Creating new shapefile layer to map out the location of MRT exits of the new Thomson-East Coast line MRT stations (SS done)</p></li>
 <li><p>Extracting out the walkways and pathways people can take. (SS done)</p></li>
 <li><p>Using “Iso-area as polygon” function to delineate the catchment area around these MRT stations. (SS done)</p></li>
@@ -179,7 +177,9 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="extracting-the-required-mrt-stations">Extracting the required MRT stations</h3>
 <p>Using the data we have retrieved from data.gov.sg, we were able to obtain the shapefile for the MRT stations (existing and future stations). Using the Select features function, we filtered out only the 7 MRT stations of the Thomson-East Coast line that we will be analysing. All the selected stations were saved into a Geopackage, TEL_MRTStations.</p>
 <p><img src="images/1.png" class="img-fluid"></p>
+<p>Using the Select by Expression function, we selected out only the 7 MRT stations we want to analyse.</p>
 <p><img src="images/2.png" class="img-fluid"></p>
+<p>After selecting the MRT stations, we saved these features into a Geopackage.</p>
 <p><img src="images/3.png" class="img-fluid"></p>
 <p><img src="images/4.png" class="img-fluid"></p>
 </section>
@@ -187,9 +187,11 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="locating-mrt-exits">Locating MRT exits</h3>
 <p>The first step we did was to map out the MRT station exits. This data could not be found online. The only dataset that was provided on data.gov.sg was the Master Plan 2019 Rail Station layer, which showed the indicative MRT station outlines. However, we felt that the outlines were not enough to give us accurate results since one MRT station can have up to five different exits which may serve very different purposes. Hence, by creating a new shapefile, we toggled editing and marked out the location of the MRT exits. We referenced lta.gov.sg to obtain the location of the exits of each station. We then created new shapefile layers of point geometry type and toggled editing to add in the point features where the MRT exits are located.</p>
 <p><img src="images/5.png" class="img-fluid"></p>
+<p>The screenshots below show the steps we took to create a new shapefile.</p>
 <p><img src="images/6.png" class="img-fluid"><img src="images/7.png" class="img-fluid"><br>
 <img src="images/8.png" class="img-fluid"><img src="https://lh6.googleusercontent.com/NavZZyjChNFpv9BEa3FdE0kseFduze7oiFqqhi4N_TFHTUGIj_uNcmAHomh7ncjiVF7ioKBlI0fqoI_dmemykUB1u52t8rr8XJ4yIPQLw4lRX-H9x3luLSFrE3kBxd4iqf9R73HxNXqz82UjnwGRfaN7CHwNaAMHg3OBdqLYBHKQKtwymVGoBoL3rB400Q.png" class="img-fluid"></p>
-<p><img src="images/10.png" class="img-fluid"></p>
+<p><img src="images/10.png" class="img-fluid" width="400"></p>
+<p>Afterwards, we separated the MRT exits into their own Geopackages by using the Select features by polygon function to pick out the exits for each MRT station. We wanted a separate shapefile for each MRT station since we wanted to analyse each station individually so that there is clear distinction between the Iso-Areas of each station.</p>
 <p><img src="images/11.png" class="img-fluid"></p>
 </section>
 <section id="extracting-relevant-roads-from-osm-roads-layer" class="level3">
@@ -211,8 +213,8 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/20.png" class="img-fluid"></p>
 <p>Screenshot above shows all the walking paths in Singapore that are applicable to our study.</p>
 </section>
-<section id="creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk." class="level3">
-<h3 class="anchored" data-anchor-id="creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk.">Creating Iso-area as polygon layers &amp; classifying the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walk.</h3>
+<section id="creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk" class="level3">
+<h3 class="anchored" data-anchor-id="creating-iso-area-as-polygon-layers-classifying-the-areas-based-on-5-minutes-10-minutes-15-minutes-and-20-minutes-walk">Creating Iso-area as polygon layers &amp; classifying the areas based on 5 minutes, 10 minutes, 15 minutes and 20 minutes walk</h3>
 <p><img src="images/21.png" class="img-fluid"></p>
 <p>In this example, we will use TE23 (Tanjong Rhu) MRT station as an example for the methods used to generate iso-areas. The blue pointers indicate the exit points of the station and the lines surrounding it indicate the walking paths.</p>
 <p><img src="images/22.png" class="img-fluid"></p>
@@ -235,11 +237,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Now, we go to Symbology and classify each ring into an interval of 5 minutes, from 0 to 20 mins walking time. The red being the nearest to the MRT exit, and light yellow being the furthest.</p>
 <p>We repeated these steps for each set of exit points from TE24 to TE29.</p>
 </section>
-<section id="identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets." class="level3">
-<h3 class="anchored" data-anchor-id="identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets.">Identification of land use through the analysis of the Master Plan 2019 datasets.</h3>
+<section id="identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="identification-of-land-use-through-the-analysis-of-the-master-plan-2019-datasets">Identification of land use through the analysis of the Master Plan 2019 datasets</h3>
 <p><img src="images/28.png" class="img-fluid"></p>
-<p>First, we opened the Master Plan 2019 Land Use KML file.<br>
-</p>
+<p>First, we opened the Master Plan 2019 Land Use KML file.</p>
 <p><img src="images/29.png" class="img-fluid"></p>
 <p>The land use layer will look like this.<br>
 </p>
@@ -365,6 +366,30 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/78.png" class="img-fluid"></p>
 <p>Screenshot above shows the result after the QML file is loaded.</p>
 <p>We proceeded to execute the same steps for each iso-area, each set of POIS, buildings and land-use from TE24 to TE29.</p>
+</section>
+<section id="generating-iso-areas-for-te25-and-te28-cycling-paths" class="level3">
+<h3 class="anchored" data-anchor-id="generating-iso-areas-for-te25-and-te28-cycling-paths">Generating iso-areas for TE25 and TE28 cycling paths</h3>
+<p>The steps that we used to generate the iso-areas as shown below are similar to the iso-areas for walking paths, with a few differences. These differences are explained in detail below.</p>
+<p><img src="images/79.png" class="img-fluid"></p>
+<p>We first used the walkable paths layer that we generated earlier, as well as the MRT exits.</p>
+<p><img src="images/80.png" class="img-fluid"></p>
+<p>We then used the <strong>Iso-Area as Polygon</strong> from the QNEAT3 plugin to generate the iso-areas.</p>
+<p><img src="images/81.png" class="img-fluid"></p>
+<p><img src="images/82.png" class="img-fluid"></p>
+<p>The values we inputted for the function included:</p>
+<ul>
+<li><p>600 as the size of iso-area, which is equivalent to 600 seconds. This will be the shape of our iso-area.</p></li>
+<li><p>16 as our default speed. This defines the average cycling speed (in km/h) in our analyses.</p></li>
+</ul>
+<p>The rest of the values are the same as the methods we used to generate iso-areas from the walking paths, and we ran the algorithm.</p>
+<p><img src="images/83.png" class="img-fluid">Screenshot below shows the result of running our iso-area algorithm.</p>
+<p><img src="images/84.png" class="img-fluid"></p>
+<p>We then symbolised the layer according to its cost level (labelled as 0-5 mins and 5-10 mins respectively) and applied it to the layer.</p>
+<p><img src="images/85.png" class="img-fluid"></p>
+<p>This is the final result after symbolisation.</p>
+<p>We proceeded to do the same steps for the cycling paths of TE28.</p>
+<p><br>
+</p>
 
 
 </section>

@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Group 10 Cost of Coast?"
+  title: "G2T10: The Cost of Coast?"
   navbar:
     left:
       - href: index.html
@@ -16,8 +16,6 @@ website:
       - href: results_discussion.html
         text: Results & Discussion
     right:
-      - href: index.qmd
-        text: Home
       - href: about.html
         text: About
         
