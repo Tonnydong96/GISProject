@@ -23,7 +23,11 @@ editor: visual
 
 9.  Identify the places of interest in the catchment area by analysing the OpenStreetMap POIS layer, and selecting those within the iso-areas using the 'Select by location' function. (SS done)
 
-10. Labelling the POIS with SVG symbols, based on the type of POIS. (SS done)
+10. Labelling the POIS with SVG symbols, based on the type of POIS.
+
+11. Standardising the symbologies for different layers.
+
+12. **For cycling path analyses, classifying the iso-areas based on 5 minutes & 10 minutes cycling time from the MRT stations, based on a cycling speed of 16 km/h.**
 
 ### Datasets Used
 
