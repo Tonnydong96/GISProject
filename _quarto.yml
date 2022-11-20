@@ -5,7 +5,7 @@ website:
   title: "G2T10: The Cost of Coast?"
   navbar:
     left:
-      - href: index.html
+      - href: overview.html
         text: Overview
       - href: Poster.html
         text: Poster
@@ -16,6 +16,8 @@ website:
       - href: results_discussion.html
         text: Results & Discussion
     right:
+      - href: index.html
+        text: Home
       - href: about.html
         text: About
         
